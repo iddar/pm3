@@ -8,4 +8,4 @@ COPY ./Cargo.lock .
 # RUN cargo build --release
 RUN cargo install --path .
 
-CMD ["appname"]
+CMD ["pm3"]

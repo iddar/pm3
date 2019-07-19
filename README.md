@@ -1,24 +1,25 @@
-# Rust Docker Boilerplate
+# PM3
+
+Port pm2 from javascript to Rust lang
 
 ## Download and build image
 
 ```sh
 # build image
-docker build -t myapp .
+docker build -t pm3 .
 
 # run app image
-docker run --rm -it myapp
+docker run --rm -it pm3
 ```
-IMPORTANT: in this example use "myapp" for image name if you change this please change un all commmands
 
 ## Run, test and release your Rust application
 
 ```sh
-docker run --rm -v "$PWD":/usr/src/app -it myapp rust:1.36.0 cargo run
-docker run --rm -v "$PWD":/usr/src/app -it myapp rust:1.36.0 cargo test
+docker run --rm -v "$PWD":/usr/src/app -it pm3 rust:1.36.0 cargo run
+docker run --rm -v "$PWD":/usr/src/app -it pm3 rust:1.36.0 cargo test
 
-docker run --rm -v "$PWD":/usr/src/app -it myapp rust:1.36.0 cargo build 
-docker run --rm -v "$PWD":/usr/src/app -it myapp rust:1.36.0 cargo build --release
+docker run --rm -v "$PWD":/usr/src/app -it pm3 rust:1.36.0 cargo build 
+docker run --rm -v "$PWD":/usr/src/app -it pm3 rust:1.36.0 cargo build --release
 ```
 
 

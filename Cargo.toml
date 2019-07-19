@@ -1,8 +1,8 @@
 [package]
-name = "appname"
-description = "simple hello world app"
+name = "pm3"
+description = "pm2 port"
 version = "0.1.0"
-authors = ["iddar <iddar@dbug.mx>"]
+authors = ["iddar <iddar@dbug.mx>", "devcharles", "visomiDev"]
 edition = "2018"
 repository = "https://github.com/iddar/rust-docker-boilerplate"
 readme = "README.md"
@@ -19,3 +19,4 @@ opt-level = 3
 debug = false
 
 [dependencies]
+clap = {version = "~2.33.0", features = ["yaml"]}
